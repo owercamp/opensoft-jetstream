@@ -1,4 +1,4 @@
-@props(['url' => route('login')])
+@props(['url' => route('login'), 'wLogo' => 'w-16'])
 <a {{ $attributes->merge(['href' => $url]) }}>
-  <img src="{{ asset('img/shortlogo.gif') }}" class="img-opensoft" alt="{{ config('app.lastname', 'OPENSOFT') }}">
+  <img src="{{ asset('img/shortlogo.gif') }}" {{ $attributes->merge(['class' => $wLogo]) }} alt="{{ config('app.lastname', 'OPENSOFT') }}">
 </a>
