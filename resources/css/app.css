@@ -11,3 +11,18 @@ w-16{
 w-40{
   width: 10rem/* 160px */;
 }
+mt-n1{
+  margin-top: -0.25rem/* -4px */;
+}
+mt-n2{
+  margin-top: -0.5rem/* -8px */;
+}
+mt-n3{
+  margin-top: -1rem/* -16px */;
+}
+mt-n4{
+  margin-top: -1.5rem/* -24px */;
+}
+mt-n5{
+  margin-top: -3rem/* -48px */;
+}
