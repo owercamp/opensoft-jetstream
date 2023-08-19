@@ -9,9 +9,182 @@
         </div>
 
         <!-- Navigation Links -->
-        <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-          <x-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
-            {{ __('Dashboard') }}
+        <div class="hidden space-x-0 sm:-my-px sm:ml-10 sm:flex">
+
+          <!-- link lista creacion -->
+          <x-nav-link class="relative mt-3" style="width: max-content;">
+            <x-dropdown align="left" mtop="mt-n2">
+              <x-slot name="trigger">
+                <span class="inline-flex rounded-md">
+                  <button type="button" class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 dark:text-gray-400 bg-white dark:bg-gray-800 hover:text-gray-700 dark:hover:text-gray-300 focus:outline-none focus:bg-gray-50 dark:focus:bg-gray-700 active:bg-gray-50 dark:active:bg-gray-700 transition ease-in-out duration-150">
+                    {{ __('Creation') }}
+
+                    <svg class="ml-2 -mr-0.5 h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 15L12 18.75 15.75 15m-7.5-6L12 5.25 15.75 9" />
+                    </svg>
+                  </button>
+                </span>
+              </x-slot>
+              <x-slot name="content">
+                <x-dropdown-link href="#">
+                  {{ __('Access') }}
+                </x-dropdown-link>
+              </x-slot>
+            </x-dropdown>
+          </x-nav-link>
+
+          <!-- link lista sistema -->
+          <x-nav-link class="relative mt-3" style="width: max-content;">
+            <x-dropdown align="left" mtop="mt-n2">
+              <x-slot name="trigger">
+                <span class="inline-flex rounded-md">
+                  <button type="button" class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 dark:text-gray-400 bg-white dark:bg-gray-800 hover:text-gray-700 dark:hover:text-gray-300 focus:outline-none focus:bg-gray-50 dark:focus:bg-gray-700 active:bg-gray-50 dark:active:bg-gray-700 transition ease-in-out duration-150">
+                    {{ __('Systems') }}
+
+                    <svg class="ml-2 -mr-0.5 h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 15L12 18.75 15.75 15m-7.5-6L12 5.25 15.75 9" />
+                    </svg>
+                  </button>
+                </span>
+              </x-slot>
+              <x-slot name="content">
+                <x-dropdown-link href="#">
+                  {{ __('SG-Management') }}
+                </x-dropdown-link>
+              </x-slot>
+            </x-dropdown>
+          </x-nav-link>
+
+          <!-- link lista base de datos -->
+          <x-nav-link class="relative mt-3" style="width: max-content;">
+            <x-dropdown align="left" mtop="mt-n2">
+              <x-slot name="trigger">
+                <span class="inline-flex rounded-md">
+                  <button type="button" class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 dark:text-gray-400 bg-white dark:bg-gray-800 hover:text-gray-700 dark:hover:text-gray-300 focus:outline-none focus:bg-gray-50 dark:focus:bg-gray-700 active:bg-gray-50 dark:active:bg-gray-700 transition ease-in-out duration-150">
+                    {{ __('Database') }}
+
+                    <svg class="ml-2 -mr-0.5 h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 15L12 18.75 15.75 15m-7.5-6L12 5.25 15.75 9" />
+                    </svg>
+                  </button>
+                </span>
+              </x-slot>
+              <x-slot name="content">
+                <x-dropdown-link href="#">
+                  {{ __('Company Creation') }}
+                </x-dropdown-link>
+              </x-slot>
+            </x-dropdown>
+          </x-nav-link>
+
+          <!-- link lista Gerencial -->
+          <x-nav-link class="relative mt-3" style="width: max-content;">
+            <x-dropdown align="left" mtop="mt-n2">
+              <x-slot name="trigger">
+                <span class="inline-flex rounded-md">
+                  <button type="button" class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 dark:text-gray-400 bg-white dark:bg-gray-800 hover:text-gray-700 dark:hover:text-gray-300 focus:outline-none focus:bg-gray-50 dark:focus:bg-gray-700 active:bg-gray-50 dark:active:bg-gray-700 transition ease-in-out duration-150">
+                    {{ __('Management') }}
+
+                    <svg class="ml-2 -mr-0.5 h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 15L12 18.75 15.75 15m-7.5-6L12 5.25 15.75 9" />
+                    </svg>
+                  </button>
+                </span>
+              </x-slot>
+              <x-slot name="content">
+                <x-dropdown-link href="#">
+                  {{ __('Committees') }}
+                </x-dropdown-link>
+              </x-slot>
+            </x-dropdown>
+          </x-nav-link>
+
+          <!-- link lista Comercial -->
+          <x-nav-link class="relative mt-3" style="width: max-content;">
+            <x-dropdown align="left" mtop="mt-n2">
+              <x-slot name="trigger">
+                <span class="inline-flex rounded-md">
+                  <button type="button" class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 dark:text-gray-400 bg-white dark:bg-gray-800 hover:text-gray-700 dark:hover:text-gray-300 focus:outline-none focus:bg-gray-50 dark:focus:bg-gray-700 active:bg-gray-50 dark:active:bg-gray-700 transition ease-in-out duration-150">
+                    {{ __('Commercial') }}
+
+                    <svg class="ml-2 -mr-0.5 h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 15L12 18.75 15.75 15m-7.5-6L12 5.25 15.75 9" />
+                    </svg>
+                  </button>
+                </span>
+              </x-slot>
+              <x-slot name="content">
+                <x-dropdown-link href="#">
+                  {{ __('Service Portfolio') }}
+                </x-dropdown-link>
+              </x-slot>
+            </x-dropdown>
+          </x-nav-link>
+
+          <!-- link lista Logistica -->
+          <x-nav-link class="relative mt-3" style="width: max-content;">
+            <x-dropdown align="left" mtop="mt-n2">
+              <x-slot name="trigger">
+                <span class="inline-flex rounded-md">
+                  <button type="button" class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 dark:text-gray-400 bg-white dark:bg-gray-800 hover:text-gray-700 dark:hover:text-gray-300 focus:outline-none focus:bg-gray-50 dark:focus:bg-gray-700 active:bg-gray-50 dark:active:bg-gray-700 transition ease-in-out duration-150">
+                    {{ __('Logistics') }}
+
+                    <svg class="ml-2 -mr-0.5 h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 15L12 18.75 15.75 15m-7.5-6L12 5.25 15.75 9" />
+                    </svg>
+                  </button>
+                </span>
+              </x-slot>
+              <x-slot name="content">
+                <x-dropdown-link href="#">
+                  {{ __('Partners') }}
+                </x-dropdown-link>
+              </x-slot>
+            </x-dropdown>
+          </x-nav-link>
+
+          <!-- link lista Operativa -->
+          <x-nav-link class="relative mt-3" style="width: max-content;">
+            <x-dropdown align="left" mtop="mt-n3">
+              <x-slot name="trigger">
+                <span class="inline-flex rounded-md">
+                  <button type="button" class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 dark:text-gray-400 bg-white dark:bg-gray-800 hover:text-gray-700 dark:hover:text-gray-300 focus:outline-none focus:bg-gray-50 dark:focus:bg-gray-700 active:bg-gray-50 dark:active:bg-gray-700 transition ease-in-out duration-150">
+                    {{ __('Operative') }}
+
+                    <svg class="ml-2 -mr-0.5 h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 15L12 18.75 15.75 15m-7.5-6L12 5.25 15.75 9" />
+                    </svg>
+                  </button>
+                </span>
+              </x-slot>
+              <x-slot name="content">
+                <x-dropdown-link href="#">
+                  {{ __('Request for Services') }}
+                </x-dropdown-link>
+              </x-slot>
+            </x-dropdown>
+          </x-nav-link>
+
+          <!-- link lista Financiera -->
+          <x-nav-link class="relative mt-3" style="width: max-content;">
+            <x-dropdown align="left" mtop="mt-n4">
+              <x-slot name="trigger">
+                <span class="inline-flex rounded-md">
+                  <button type="button" class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 dark:text-gray-400 bg-white dark:bg-gray-800 hover:text-gray-700 dark:hover:text-gray-300 focus:outline-none focus:bg-gray-50 dark:focus:bg-gray-700 active:bg-gray-50 dark:active:bg-gray-700 transition ease-in-out duration-150">
+                    {{ __('Financial') }}
+
+                    <svg class="ml-2 -mr-0.5 h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 15L12 18.75 15.75 15m-7.5-6L12 5.25 15.75 9" />
+                    </svg>
+                  </button>
+                </span>
+              </x-slot>
+              <x-slot name="content">
+                <x-dropdown-link href="#">
+                  {{ __('Accounts Receivable') }}
+                </x-dropdown-link>
+              </x-slot>
+            </x-dropdown>
           </x-nav-link>
         </div>
       </div>
@@ -71,7 +244,7 @@
 
         <!-- Settings Dropdown -->
         <div class="ml-3 relative">
-          <x-dropdown align="right" width="48">
+          <x-dropdown align="right">
             <x-slot name="trigger">
               @if (Laravel\Jetstream\Jetstream::managesProfilePhotos())
               <button class="flex text-sm border-2 border-transparent rounded-full focus:outline-none focus:border-gray-300 transition">
@@ -79,10 +252,10 @@
               </button>
               @else
               <span class="inline-flex rounded-md">
-                <button type="button" class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 dark:text-gray-400 bg-white dark:bg-gray-800 hover:text-gray-700 dark:hover:text-gray-300 focus:outline-none focus:bg-gray-50 dark:focus:bg-gray-700 active:bg-gray-50 dark:active:bg-gray-700 transition ease-in-out duration-150">
+                <button type="button" class="inline items-center px-3 py-1 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 dark:text-gray-400 bg-white dark:bg-gray-800 hover:text-gray-700 dark:hover:text-gray-300 focus:outline-none focus:bg-gray-50 dark:focus:bg-gray-700 active:bg-gray-50 dark:active:bg-gray-700 transition ease-in-out duration-150 w-40">
                   {{ Auth::user()->name }}
 
-                  <svg class="ml-2 -mr-0.5 h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                  <svg class="m-auto w-full h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                   </svg>
                 </button>
@@ -92,6 +265,12 @@
 
             <x-slot name="content">
               <!-- Account Management -->
+              <x-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')" class="w-full">
+                <div class="block px-4 py-2 text-xs text-gray-400">
+                  {{ __('Dashboard') }}
+                </div>
+              </x-nav-link>
+
               <div class="block px-4 py-2 text-xs text-gray-400">
                 {{ __('Manage Account') }}
               </div>
