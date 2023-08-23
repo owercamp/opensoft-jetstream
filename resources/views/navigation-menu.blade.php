@@ -11,9 +11,9 @@
         <!-- Navigation Links -->
         <div class="hidden space-x-0 sm:-my-px sm:ml-10 sm:flex">
 
-          <!-- link lista creacion -->
-          <x-nav-link class="relative mt-3" style="width: max-content;">
-            <x-dropdown align="left" mtop="mt-n2">
+          <!-- link list Creation -->
+          <div class="relative mt-4">
+            <x-dropdown align="left">
               <x-slot name="trigger">
                 <span class="inline-flex rounded-md">
                   <button type="button" class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 dark:text-gray-400 bg-white dark:bg-gray-800 hover:text-gray-700 dark:hover:text-gray-300 focus:outline-none focus:bg-gray-50 dark:focus:bg-gray-700 active:bg-gray-50 dark:active:bg-gray-700 transition ease-in-out duration-150">
@@ -29,13 +29,31 @@
                 <x-dropdown-link href="#">
                   {{ __('Access') }}
                 </x-dropdown-link>
+                <x-dropdown-link href="#">
+                  {{ __('Sites') }}
+                </x-dropdown-link>
+                <x-dropdown-link href="#">
+                  {{ __('Social Security') }}
+                </x-dropdown-link>
+                <x-dropdown-link href="#">
+                  {{ __('Documents') }}
+                </x-dropdown-link>
+                <x-dropdown-link href="#">
+                  {{ __('Vehicle Types') }}
+                </x-dropdown-link>
+                <x-dropdown-link href="#">
+                  {{ __('Product Types') }}
+                </x-dropdown-link>
+                <x-dropdown-link href="#">
+                  {{ __('Service Types') }}
+                </x-dropdown-link>
               </x-slot>
             </x-dropdown>
-          </x-nav-link>
+          </div>
 
-          <!-- link lista sistema -->
-          <x-nav-link class="relative mt-3" style="width: max-content;">
-            <x-dropdown align="left" mtop="mt-n2">
+          <!-- link list Systems -->
+          <div class="relative mt-4">
+            <x-dropdown align="left">
               <x-slot name="trigger">
                 <span class="inline-flex rounded-md">
                   <button type="button" class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 dark:text-gray-400 bg-white dark:bg-gray-800 hover:text-gray-700 dark:hover:text-gray-300 focus:outline-none focus:bg-gray-50 dark:focus:bg-gray-700 active:bg-gray-50 dark:active:bg-gray-700 transition ease-in-out duration-150">
@@ -49,15 +67,27 @@
               </x-slot>
               <x-slot name="content">
                 <x-dropdown-link href="#">
-                  {{ __('SG-Management') }}
+                  {{ __('SG') }}-{{ __('Management') }}
+                </x-dropdown-link>
+                <x-dropdown-link href="#">
+                  {{ __('SG') }}-{{ __('Logistics') }}
+                </x-dropdown-link>
+                <x-dropdown-link href="#">
+                  {{ __('SG') }}-{{ __('Commercial') }}
+                </x-dropdown-link>
+                <x-dropdown-link href="#">
+                  {{ __('SG') }}-{{ __('Operative') }}
+                </x-dropdown-link>
+                <x-dropdown-link href="#">
+                  {{ __('SG') }}-{{ __('Continuous Improvement') }}
                 </x-dropdown-link>
               </x-slot>
             </x-dropdown>
-          </x-nav-link>
+          </div>
 
-          <!-- link lista base de datos -->
-          <x-nav-link class="relative mt-3" style="width: max-content;">
-            <x-dropdown align="left" mtop="mt-n2">
+          <!-- link list Database -->
+          <div class="relative mt-4">
+            <x-dropdown align="left">
               <x-slot name="trigger">
                 <span class="inline-flex rounded-md">
                   <button type="button" class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 dark:text-gray-400 bg-white dark:bg-gray-800 hover:text-gray-700 dark:hover:text-gray-300 focus:outline-none focus:bg-gray-50 dark:focus:bg-gray-700 active:bg-gray-50 dark:active:bg-gray-700 transition ease-in-out duration-150">
@@ -73,13 +103,31 @@
                 <x-dropdown-link href="#">
                   {{ __('Company Creation') }}
                 </x-dropdown-link>
+                <x-dropdown-link href="#">
+                  {{ __('Human Resources Creation') }}
+                </x-dropdown-link>
+                <x-dropdown-link href="#">
+                  {{ __('Providers Creation') }}
+                </x-dropdown-link>
+                <x-dropdown-link href="#">
+                  {{ __('Partner Companies Creation') }}
+                </x-dropdown-link>
+                <x-dropdown-link href="#">
+                  {{ __('Vehicle Fleet Creation') }}
+                </x-dropdown-link>
+                <x-dropdown-link href="#">
+                  {{ __('Creation Of Trainings') }}
+                </x-dropdown-link>
+                <x-dropdown-link href="#">
+                  {{ __('Creation Continuous Improvement') }}
+                </x-dropdown-link>
               </x-slot>
             </x-dropdown>
-          </x-nav-link>
+          </div>
 
-          <!-- link lista Gerencial -->
-          <x-nav-link class="relative mt-3" style="width: max-content;">
-            <x-dropdown align="left" mtop="mt-n2">
+          <!-- link list Management -->
+          <div class="relative mt-4">
+            <x-dropdown align="left">
               <x-slot name="trigger">
                 <span class="inline-flex rounded-md">
                   <button type="button" class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 dark:text-gray-400 bg-white dark:bg-gray-800 hover:text-gray-700 dark:hover:text-gray-300 focus:outline-none focus:bg-gray-50 dark:focus:bg-gray-700 active:bg-gray-50 dark:active:bg-gray-700 transition ease-in-out duration-150">
@@ -95,13 +143,19 @@
                 <x-dropdown-link href="#">
                   {{ __('Committees') }}
                 </x-dropdown-link>
+                <x-dropdown-link href="#">
+                  {{ __('Procedures') }}
+                </x-dropdown-link>
+                <x-dropdown-link href="#">
+                  {{ __('Documents') }}
+                </x-dropdown-link>
               </x-slot>
             </x-dropdown>
-          </x-nav-link>
+          </div>
 
-          <!-- link lista Comercial -->
-          <x-nav-link class="relative mt-3" style="width: max-content;">
-            <x-dropdown align="left" mtop="mt-n2">
+          <!-- link list Commercial -->
+          <div class="relative mt-4">
+            <x-dropdown align="left">
               <x-slot name="trigger">
                 <span class="inline-flex rounded-md">
                   <button type="button" class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 dark:text-gray-400 bg-white dark:bg-gray-800 hover:text-gray-700 dark:hover:text-gray-300 focus:outline-none focus:bg-gray-50 dark:focus:bg-gray-700 active:bg-gray-50 dark:active:bg-gray-700 transition ease-in-out duration-150">
@@ -117,13 +171,25 @@
                 <x-dropdown-link href="#">
                   {{ __('Service Portfolio') }}
                 </x-dropdown-link>
+                <x-dropdown-link href="#">
+                  {{ __('Marketing Plan') }}
+                </x-dropdown-link>
+                <x-dropdown-link href="#">
+                  {{ __('Potential Customer') }}
+                </x-dropdown-link>
+                <x-dropdown-link href="#">
+                  {{ __('Permanent Contracts') }}
+                </x-dropdown-link>
+                <x-dropdown-link href="#">
+                  {{ __('Occasional Contracts') }}
+                </x-dropdown-link>
               </x-slot>
             </x-dropdown>
-          </x-nav-link>
+          </div>
 
-          <!-- link lista Logistica -->
-          <x-nav-link class="relative mt-3" style="width: max-content;">
-            <x-dropdown align="left" mtop="mt-n2">
+          <!-- link list Logistic -->
+          <div class="relative mt-4">
+            <x-dropdown align="left">
               <x-slot name="trigger">
                 <span class="inline-flex rounded-md">
                   <button type="button" class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 dark:text-gray-400 bg-white dark:bg-gray-800 hover:text-gray-700 dark:hover:text-gray-300 focus:outline-none focus:bg-gray-50 dark:focus:bg-gray-700 active:bg-gray-50 dark:active:bg-gray-700 transition ease-in-out duration-150">
@@ -139,13 +205,22 @@
                 <x-dropdown-link href="#">
                   {{ __('Partners') }}
                 </x-dropdown-link>
+                <x-dropdown-link href="#">
+                  {{ __('Contractors') }}
+                </x-dropdown-link>
+                <x-dropdown-link href="#">
+                  {{ __('Providers') }}
+                </x-dropdown-link>
+                <x-dropdown-link href="#">
+                  {{ __('Programs') }}
+                </x-dropdown-link>
               </x-slot>
             </x-dropdown>
-          </x-nav-link>
+          </div>
 
-          <!-- link lista Operativa -->
-          <x-nav-link class="relative mt-3" style="width: max-content;">
-            <x-dropdown align="left" mtop="mt-n3">
+          <!-- link list Operative -->
+          <div class="relative mt-4">
+            <x-dropdown align="left">
               <x-slot name="trigger">
                 <span class="inline-flex rounded-md">
                   <button type="button" class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 dark:text-gray-400 bg-white dark:bg-gray-800 hover:text-gray-700 dark:hover:text-gray-300 focus:outline-none focus:bg-gray-50 dark:focus:bg-gray-700 active:bg-gray-50 dark:active:bg-gray-700 transition ease-in-out duration-150">
@@ -161,13 +236,25 @@
                 <x-dropdown-link href="#">
                   {{ __('Request for Services') }}
                 </x-dropdown-link>
+                <x-dropdown-link href="#">
+                  {{ __('Services Programming') }}
+                </x-dropdown-link>
+                <x-dropdown-link href="#">
+                  {{ __('Service Tracking') }}
+                </x-dropdown-link>
+                <x-dropdown-link href="#">
+                  {{ __('Service Settlement') }}
+                </x-dropdown-link>
+                <x-dropdown-link href="#">
+                  {{ __('Service Rating') }}
+                </x-dropdown-link>
               </x-slot>
             </x-dropdown>
-          </x-nav-link>
+          </div>
 
-          <!-- link lista Financiera -->
-          <x-nav-link class="relative mt-3" style="width: max-content;">
-            <x-dropdown align="left" mtop="mt-n4">
+          <!-- link list Financial -->
+          <div class="relative mt-4">
+            <x-dropdown align="left">
               <x-slot name="trigger">
                 <span class="inline-flex rounded-md">
                   <button type="button" class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 dark:text-gray-400 bg-white dark:bg-gray-800 hover:text-gray-700 dark:hover:text-gray-300 focus:outline-none focus:bg-gray-50 dark:focus:bg-gray-700 active:bg-gray-50 dark:active:bg-gray-700 transition ease-in-out duration-150">
@@ -183,9 +270,21 @@
                 <x-dropdown-link href="#">
                   {{ __('Accounts Receivable') }}
                 </x-dropdown-link>
+                <x-dropdown-link href="#">
+                  {{ __('Accounts Payable') }}
+                </x-dropdown-link>
+                <x-dropdown-link href="#">
+                  {{ __('Revenue Movement') }}
+                </x-dropdown-link>
+                <x-dropdown-link href="#">
+                  {{ __('Outgoing Movement') }}
+                </x-dropdown-link>
+                <x-dropdown-link href="#">
+                  {{ __('Budget Analysis') }}
+                </x-dropdown-link>
               </x-slot>
             </x-dropdown>
-          </x-nav-link>
+          </div>
         </div>
       </div>
 
@@ -265,22 +364,20 @@
 
             <x-slot name="content">
               <!-- Account Management -->
-              <x-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')" class="w-full">
-                <div class="block px-4 py-2 text-xs text-gray-400">
-                  {{ __('Dashboard') }}
-                </div>
-              </x-nav-link>
+              <x-dropdown-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
+                {{ __('Dashboard') }}
+              </x-dropdown-link>
 
               <div class="block px-4 py-2 text-xs text-gray-400">
                 {{ __('Manage Account') }}
               </div>
 
-              <x-dropdown-link href="{{ route('profile.show') }}">
+              <x-dropdown-link href="{{ route('profile.show') }}" :active="request()->routeIs('profile.show')">
                 {{ __('Profile') }}
               </x-dropdown-link>
 
               @if (Laravel\Jetstream\Jetstream::hasApiFeatures())
-              <x-dropdown-link href="{{ route('api-tokens.index') }}">
+              <x-dropdown-link href="{{ route('api-tokens.index') }}" :active="request()->routeIs('api-tokens.index')">
                 {{ __('API Tokens') }}
               </x-dropdown-link>
               @endif
@@ -291,7 +388,7 @@
               <form method="POST" action="{{ route('logout') }}" x-data>
                 @csrf
 
-                <x-dropdown-link href="{{ route('logout') }}" @click.prevent="$root.submit();">
+                <x-dropdown-link href="{{ route('logout') }}" @click.prevent="$root.submit();" :active="request()->routeIs('logout')">
                   {{ __('Log Out') }}
                 </x-dropdown-link>
               </form>
@@ -315,8 +412,37 @@
   <!-- Responsive Navigation Menu -->
   <div :class="{'block': open, 'hidden': ! open}" class="hidden sm:hidden">
     <div class="pt-2 pb-3 space-y-1">
-      <x-responsive-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
-        {{ __('Dashboard') }}
+      <!-- Creation -->
+      <x-responsive-nav-link>
+        {{ __('Creation') }}
+      </x-responsive-nav-link>
+      <!-- System -->
+      <x-responsive-nav-link>
+        {{ __('Systems') }}
+      </x-responsive-nav-link>
+      <!-- Database -->
+      <x-responsive-nav-link>
+        {{ __('Database') }}
+      </x-responsive-nav-link>
+      <!-- Management -->
+      <x-responsive-nav-link>
+        {{ __('Management') }}
+      </x-responsive-nav-link>
+      <!-- Commercial -->
+      <x-responsive-nav-link>
+        {{ __('Commercial') }}
+      </x-responsive-nav-link>
+      <!-- Logistics -->
+      <x-responsive-nav-link>
+        {{ __('Logistics') }}
+      </x-responsive-nav-link>
+      <!-- Operative -->
+      <x-responsive-nav-link>
+        {{ __('Operative') }}
+      </x-responsive-nav-link>
+      <!-- Financial -->
+      <x-responsive-nav-link>
+        {{ __('Financial') }}
       </x-responsive-nav-link>
     </div>
 
@@ -336,6 +462,10 @@
       </div>
 
       <div class="mt-3 space-y-1">
+        <!-- Dashboard -->
+        <x-responsive-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
+          {{ __('Dashboard') }}
+        </x-responsive-nav-link>
         <!-- Account Management -->
         <x-responsive-nav-link href="{{ route('profile.show') }}" :active="request()->routeIs('profile.show')">
           {{ __('Profile') }}
