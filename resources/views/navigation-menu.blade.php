@@ -12,279 +12,1077 @@
         <div class="hidden space-x-0 sm:-my-px sm:ml-10 sm:flex">
 
           <!-- link list Creation -->
-          <div class="relative mt-4">
-            <x-dropdown align="left">
-              <x-slot name="trigger">
-                <span class="inline-flex rounded-md">
-                  <button type="button" class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 dark:text-gray-400 bg-white dark:bg-gray-800 hover:text-gray-700 dark:hover:text-gray-300 focus:outline-none focus:bg-gray-50 dark:focus:bg-gray-700 active:bg-gray-50 dark:active:bg-gray-700 transition ease-in-out duration-150">
-                    {{ __('Creation') }}
-
-                    <svg class="ml-2 -mr-0.5 h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 15L12 18.75 15.75 15m-7.5-6L12 5.25 15.75 9" />
-                    </svg>
-                  </button>
-                </span>
+          <div class="relative py-4">
+            <x-dropdown-levels level="first">
+              <x-slot name="title">
+                {{ __('Creation') }}
               </x-slot>
               <x-slot name="content">
-                <x-dropdown-link href="#">
-                  {{ __('Access') }}
-                </x-dropdown-link>
-                <x-dropdown-link href="#">
-                  {{ __('Sites') }}
-                </x-dropdown-link>
-                <x-dropdown-link href="#">
-                  {{ __('Social Security') }}
-                </x-dropdown-link>
-                <x-dropdown-link href="#">
-                  {{ __('Documents') }}
-                </x-dropdown-link>
-                <x-dropdown-link href="#">
-                  {{ __('Vehicle Types') }}
-                </x-dropdown-link>
-                <x-dropdown-link href="#">
-                  {{ __('Product Types') }}
-                </x-dropdown-link>
-                <x-dropdown-link href="#">
-                  {{ __('Service Types') }}
-                </x-dropdown-link>
+                <li>
+                  <x-dropdown-levels level="second" class="px-3">
+                    <x-slot name="title">
+                      {{ __('Access') }}
+                    </x-slot>
+                    <x-slot name="content">
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Roles') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Permissions') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Users') }}
+                        </x-dropdown-link>
+                      </li>
+                    </x-slot>
+                  </x-dropdown-levels>
+                </li>
+                <li>
+                  <x-dropdown-levels level="second" class="px-3">
+                    <x-slot name="title">
+                      {{ __('Sites') }}
+                    </x-slot>
+                    <x-slot name="content">
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 1') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 2') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 3') }}
+                        </x-dropdown-link>
+                      </li>
+                    </x-slot>
+                  </x-dropdown-levels>
+                </li>
+                <li>
+                  <x-dropdown-levels level="second" class="px-3">
+                    <x-slot name="title">
+                      {{ __('Social Security') }}
+                    </x-slot>
+                    <x-slot name="content">
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 1') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 2') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 3') }}
+                        </x-dropdown-link>
+                      </li>
+                    </x-slot>
+                  </x-dropdown-levels>
+                </li>
+                <li>
+                  <x-dropdown-levels level="second" class="px-3">
+                    <x-slot name="title">
+                      {{ __('Document') }}
+                    </x-slot>
+                    <x-slot name="content">
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 1') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 2') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 3') }}
+                        </x-dropdown-link>
+                      </li>
+                    </x-slot>
+                  </x-dropdown-levels>
+                </li>
+                <li>
+                  <x-dropdown-levels level="second" class="px-3">
+                    <x-slot name="title">
+                      {{ __('Vehicle Types') }}
+                    </x-slot>
+                    <x-slot name="content">
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 1') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 2') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 3') }}
+                        </x-dropdown-link>
+                      </li>
+                    </x-slot>
+                  </x-dropdown-levels>
+                </li>
+                <li>
+                  <x-dropdown-levels level="second" class="px-3">
+                    <x-slot name="title">
+                      {{ __('Product Types') }}
+                    </x-slot>
+                    <x-slot name="content">
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 1') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 2') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 3') }}
+                        </x-dropdown-link>
+                      </li>
+                    </x-slot>
+                  </x-dropdown-levels>
+                </li>
+                <li>
+                  <x-dropdown-levels level="second" class="px-3">
+                    <x-slot name="title">
+                      {{ __('Service Types') }}
+                    </x-slot>
+                    <x-slot name="content">
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 1') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 2') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 3') }}
+                        </x-dropdown-link>
+                      </li>
+                    </x-slot>
+                  </x-dropdown-levels>
+                </li>
               </x-slot>
-            </x-dropdown>
+            </x-dropdown-levels>
           </div>
 
           <!-- link list Systems -->
-          <div class="relative mt-4">
-            <x-dropdown align="left">
-              <x-slot name="trigger">
-                <span class="inline-flex rounded-md">
-                  <button type="button" class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 dark:text-gray-400 bg-white dark:bg-gray-800 hover:text-gray-700 dark:hover:text-gray-300 focus:outline-none focus:bg-gray-50 dark:focus:bg-gray-700 active:bg-gray-50 dark:active:bg-gray-700 transition ease-in-out duration-150">
-                    {{ __('Systems') }}
-
-                    <svg class="ml-2 -mr-0.5 h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 15L12 18.75 15.75 15m-7.5-6L12 5.25 15.75 9" />
-                    </svg>
-                  </button>
-                </span>
+          <div class="relative py-4">
+            <x-dropdown-levels level="first">
+              <x-slot name="title">
+                {{ __('Systems') }}
               </x-slot>
               <x-slot name="content">
-                <x-dropdown-link href="#">
-                  {{ __('SG') }}-{{ __('Management') }}
-                </x-dropdown-link>
-                <x-dropdown-link href="#">
-                  {{ __('SG') }}-{{ __('Logistics') }}
-                </x-dropdown-link>
-                <x-dropdown-link href="#">
-                  {{ __('SG') }}-{{ __('Commercial') }}
-                </x-dropdown-link>
-                <x-dropdown-link href="#">
-                  {{ __('SG') }}-{{ __('Operative') }}
-                </x-dropdown-link>
-                <x-dropdown-link href="#">
-                  {{ __('SG') }}-{{ __('Continuous Improvement') }}
-                </x-dropdown-link>
+                <li>
+                  <x-dropdown-levels level="second" class="px-2">
+                    <x-slot name="title">
+                      {{ __('SG') }} - {{ __('Management') }}
+                    </x-slot>
+                    <x-slot name="content">
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 1') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 2') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 3') }}
+                        </x-dropdown-link>
+                      </li>
+                    </x-slot>
+                  </x-dropdown-levels>
+                </li>
+                <li>
+                  <x-dropdown-levels level="second" class="px-2">
+                    <x-slot name="title">
+                    {{ __('SG') }} - {{ __('Logistics') }}
+                    </x-slot>
+                    <x-slot name="content">
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 1') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 2') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 3') }}
+                        </x-dropdown-link>
+                      </li>
+                    </x-slot>
+                  </x-dropdown-levels>
+                </li>
+                <li>
+                  <x-dropdown-levels level="second" class="px-2">
+                    <x-slot name="title">
+                    {{ __('SG') }} - {{ __('Commercial') }}
+                    </x-slot>
+                    <x-slot name="content">
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 1') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 2') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 3') }}
+                        </x-dropdown-link>
+                      </li>
+                    </x-slot>
+                  </x-dropdown-levels>
+                </li>
+                <li>
+                  <x-dropdown-levels level="second" class="px-2">
+                    <x-slot name="title">
+                    {{ __('SG') }} - {{ __('Operative') }}
+                    </x-slot>
+                    <x-slot name="content">
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 1') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 2') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 3') }}
+                        </x-dropdown-link>
+                      </li>
+                    </x-slot>
+                  </x-dropdown-levels>
+                </li>
+                <li>
+                  <x-dropdown-levels level="second" class="px-2">
+                    <x-slot name="title">
+                    {{ __('SG') }} - {{ __('Continuous Improvement') }}
+                    </x-slot>
+                    <x-slot name="content">
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 1') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 2') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 3') }}
+                        </x-dropdown-link>
+                      </li>
+                    </x-slot>
+                  </x-dropdown-levels>
+                </li>
               </x-slot>
-            </x-dropdown>
+            </x-dropdown-levels>
           </div>
 
           <!-- link list Database -->
-          <div class="relative mt-4">
-            <x-dropdown align="left">
-              <x-slot name="trigger">
-                <span class="inline-flex rounded-md">
-                  <button type="button" class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 dark:text-gray-400 bg-white dark:bg-gray-800 hover:text-gray-700 dark:hover:text-gray-300 focus:outline-none focus:bg-gray-50 dark:focus:bg-gray-700 active:bg-gray-50 dark:active:bg-gray-700 transition ease-in-out duration-150">
-                    {{ __('Database') }}
-
-                    <svg class="ml-2 -mr-0.5 h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 15L12 18.75 15.75 15m-7.5-6L12 5.25 15.75 9" />
-                    </svg>
-                  </button>
-                </span>
+          <div class="relative py-4">
+            <x-dropdown-levels level="first">
+              <x-slot name="title">
+                {{ __('Database') }}
               </x-slot>
               <x-slot name="content">
-                <x-dropdown-link href="#">
-                  {{ __('Company Creation') }}
-                </x-dropdown-link>
-                <x-dropdown-link href="#">
-                  {{ __('Human Resources Creation') }}
-                </x-dropdown-link>
-                <x-dropdown-link href="#">
-                  {{ __('Providers Creation') }}
-                </x-dropdown-link>
-                <x-dropdown-link href="#">
-                  {{ __('Partner Companies Creation') }}
-                </x-dropdown-link>
-                <x-dropdown-link href="#">
-                  {{ __('Vehicle Fleet Creation') }}
-                </x-dropdown-link>
-                <x-dropdown-link href="#">
-                  {{ __('Creation Of Trainings') }}
-                </x-dropdown-link>
-                <x-dropdown-link href="#">
-                  {{ __('Creation Continuous Improvement') }}
-                </x-dropdown-link>
+                <li>
+                  <x-dropdown-levels level="second" class="px-2">
+                    <x-slot name="title">
+                      {{ __('Company Creation') }}
+                    </x-slot>
+                    <x-slot name="content">
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 1') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 2') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 3') }}
+                        </x-dropdown-link>
+                      </li>
+                    </x-slot>
+                  </x-dropdown-levels>
+                </li>
+                <li>
+                  <x-dropdown-levels level="second" class="px-2">
+                    <x-slot name="title">
+                      {{ __('Human Resources Creation') }}
+                    </x-slot>
+                    <x-slot name="content">
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 1') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 2') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 3') }}
+                        </x-dropdown-link>
+                      </li>
+                    </x-slot>
+                  </x-dropdown-levels>
+                </li>
+                <li>
+                  <x-dropdown-levels level="second" class="px-2">
+                    <x-slot name="title">
+                      {{ __('Providers Creation') }}
+                    </x-slot>
+                    <x-slot name="content">
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 1') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 2') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 3') }}
+                        </x-dropdown-link>
+                      </li>
+                    </x-slot>
+                  </x-dropdown-levels>
+                </li>
+                <li>
+                  <x-dropdown-levels level="second" class="px-2">
+                    <x-slot name="title">
+                      {{ __('Partner Companies Creation') }}
+                    </x-slot>
+                    <x-slot name="content">
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 1') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 2') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 3') }}
+                        </x-dropdown-link>
+                      </li>
+                    </x-slot>
+                  </x-dropdown-levels>
+                </li>
+                <li>
+                  <x-dropdown-levels level="second" class="px-2">
+                    <x-slot name="title">
+                      {{ __('Vehicle Fleet Creation') }}
+                    </x-slot>
+                    <x-slot name="content">
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 1') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 2') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 3') }}
+                        </x-dropdown-link>
+                      </li>
+                    </x-slot>
+                  </x-dropdown-levels>
+                </li>
+                <li>
+                  <x-dropdown-levels level="second" class="px-2">
+                    <x-slot name="title">
+                      {{ __('Creation Of Trainings') }}
+                    </x-slot>
+                    <x-slot name="content">
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 1') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 2') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 3') }}
+                        </x-dropdown-link>
+                      </li>
+                    </x-slot>
+                  </x-dropdown-levels>
+                </li>
+                <li>
+                  <x-dropdown-levels level="second" class="px-2">
+                    <x-slot name="title">
+                      {{ __('Creation Continuous Improvement') }}
+                    </x-slot>
+                    <x-slot name="content">
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 1') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 2') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 3') }}
+                        </x-dropdown-link>
+                      </li>
+                    </x-slot>
+                  </x-dropdown-levels>
+                </li>
               </x-slot>
-            </x-dropdown>
+            </x-dropdown-levels>
           </div>
 
           <!-- link list Management -->
-          <div class="relative mt-4">
-            <x-dropdown align="left">
-              <x-slot name="trigger">
-                <span class="inline-flex rounded-md">
-                  <button type="button" class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 dark:text-gray-400 bg-white dark:bg-gray-800 hover:text-gray-700 dark:hover:text-gray-300 focus:outline-none focus:bg-gray-50 dark:focus:bg-gray-700 active:bg-gray-50 dark:active:bg-gray-700 transition ease-in-out duration-150">
-                    {{ __('Management') }}
-
-                    <svg class="ml-2 -mr-0.5 h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 15L12 18.75 15.75 15m-7.5-6L12 5.25 15.75 9" />
-                    </svg>
-                  </button>
-                </span>
+          <div class="relative py-4">
+            <x-dropdown-levels level="first">
+              <x-slot name="title">
+                {{ __('Management') }}
               </x-slot>
               <x-slot name="content">
-                <x-dropdown-link href="#">
-                  {{ __('Committees') }}
-                </x-dropdown-link>
-                <x-dropdown-link href="#">
-                  {{ __('Procedures') }}
-                </x-dropdown-link>
-                <x-dropdown-link href="#">
-                  {{ __('Documents') }}
-                </x-dropdown-link>
+                <li>
+                  <x-dropdown-levels level="second" class="px-2">
+                    <x-slot name="title">
+                      {{ __('Committees') }}
+                    </x-slot>
+                    <x-slot name="content">
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 1') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 2') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 3') }}
+                        </x-dropdown-link>
+                      </li>
+                    </x-slot>
+                  </x-dropdown-levels>
+                </li>
+                <li>
+                  <x-dropdown-levels level="second" class="px-2">
+                    <x-slot name="title">
+                      {{ __('Procedures') }}
+                    </x-slot>
+                    <x-slot name="content">
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 1') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 2') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 3') }}
+                        </x-dropdown-link>
+                      </li>
+                    </x-slot>
+                  </x-dropdown-levels>
+                </li>
+                <li>
+                  <x-dropdown-levels level="second" class="px-2">
+                    <x-slot name="title">
+                      {{ __('Documents') }}
+                    </x-slot>
+                    <x-slot name="content">
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 1') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 2') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 3') }}
+                        </x-dropdown-link>
+                      </li>
+                    </x-slot>
+                  </x-dropdown-levels>
+                </li>
               </x-slot>
-            </x-dropdown>
+            </x-dropdown-levels>
           </div>
 
           <!-- link list Commercial -->
-          <div class="relative mt-4">
-            <x-dropdown align="left">
-              <x-slot name="trigger">
-                <span class="inline-flex rounded-md">
-                  <button type="button" class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 dark:text-gray-400 bg-white dark:bg-gray-800 hover:text-gray-700 dark:hover:text-gray-300 focus:outline-none focus:bg-gray-50 dark:focus:bg-gray-700 active:bg-gray-50 dark:active:bg-gray-700 transition ease-in-out duration-150">
-                    {{ __('Commercial') }}
-
-                    <svg class="ml-2 -mr-0.5 h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 15L12 18.75 15.75 15m-7.5-6L12 5.25 15.75 9" />
-                    </svg>
-                  </button>
-                </span>
+          <div class="relative py-4">
+            <x-dropdown-levels level="first">
+              <x-slot name="title">
+                {{ __('Commercial') }}
               </x-slot>
               <x-slot name="content">
-                <x-dropdown-link href="#">
-                  {{ __('Service Portfolio') }}
-                </x-dropdown-link>
-                <x-dropdown-link href="#">
-                  {{ __('Marketing Plan') }}
-                </x-dropdown-link>
-                <x-dropdown-link href="#">
-                  {{ __('Potential Customer') }}
-                </x-dropdown-link>
-                <x-dropdown-link href="#">
-                  {{ __('Permanent Contracts') }}
-                </x-dropdown-link>
-                <x-dropdown-link href="#">
-                  {{ __('Occasional Contracts') }}
-                </x-dropdown-link>
+                <li>
+                  <x-dropdown-levels level="second" class="px-2">
+                    <x-slot name="title">
+                      {{ __('Service Portfolio') }}
+                    </x-slot>
+                    <x-slot name="content">
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 1') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 2') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 3') }}
+                        </x-dropdown-link>
+                      </li>
+                    </x-slot>
+                  </x-dropdown-levels>
+                </li>
+                <li>
+                  <x-dropdown-levels level="second" class="px-2">
+                    <x-slot name="title">
+                      {{ __('Marketing Plan') }}
+                    </x-slot>
+                    <x-slot name="content">
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 1') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 2') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 3') }}
+                        </x-dropdown-link>
+                      </li>
+                    </x-slot>
+                  </x-dropdown-levels>
+                </li>
+                <li>
+                  <x-dropdown-levels level="second" class="px-2">
+                    <x-slot name="title">
+                      {{ __('Potential Customer') }}
+                    </x-slot>
+                    <x-slot name="content">
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 1') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 2') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 3') }}
+                        </x-dropdown-link>
+                      </li>
+                    </x-slot>
+                  </x-dropdown-levels>
+                </li>
+                <li>
+                  <x-dropdown-levels level="second" class="px-2">
+                    <x-slot name="title">
+                      {{ __('Permanent Contracts') }}
+                    </x-slot>
+                    <x-slot name="content">
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 1') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 2') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 3') }}
+                        </x-dropdown-link>
+                      </li>
+                    </x-slot>
+                  </x-dropdown-levels>
+                </li>
+                <li>
+                  <x-dropdown-levels level="second" class="px-2">
+                    <x-slot name="title">
+                      {{ __('Occasional Contracts') }}
+                    </x-slot>
+                    <x-slot name="content">
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 1') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 2') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 3') }}
+                        </x-dropdown-link>
+                      </li>
+                    </x-slot>
+                  </x-dropdown-levels>
+                </li>
               </x-slot>
-            </x-dropdown>
+            </x-dropdown-levels>
           </div>
 
           <!-- link list Logistic -->
-          <div class="relative mt-4">
-            <x-dropdown align="left">
-              <x-slot name="trigger">
-                <span class="inline-flex rounded-md">
-                  <button type="button" class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 dark:text-gray-400 bg-white dark:bg-gray-800 hover:text-gray-700 dark:hover:text-gray-300 focus:outline-none focus:bg-gray-50 dark:focus:bg-gray-700 active:bg-gray-50 dark:active:bg-gray-700 transition ease-in-out duration-150">
-                    {{ __('Logistics') }}
-
-                    <svg class="ml-2 -mr-0.5 h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 15L12 18.75 15.75 15m-7.5-6L12 5.25 15.75 9" />
-                    </svg>
-                  </button>
-                </span>
+          <div class="relative py-4">
+            <x-dropdown-levels level="first">
+              <x-slot name="title">
+                {{ __('Logistics') }}
               </x-slot>
               <x-slot name="content">
-                <x-dropdown-link href="#">
-                  {{ __('Partners') }}
-                </x-dropdown-link>
-                <x-dropdown-link href="#">
-                  {{ __('Contractors') }}
-                </x-dropdown-link>
-                <x-dropdown-link href="#">
-                  {{ __('Providers') }}
-                </x-dropdown-link>
-                <x-dropdown-link href="#">
-                  {{ __('Programs') }}
-                </x-dropdown-link>
+                <li>
+                  <x-dropdown-levels level="second" class="px-2">
+                    <x-slot name="title">
+                      {{ __('Partners') }}
+                    </x-slot>
+                    <x-slot name="content">
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 1') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 2') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 3') }}
+                        </x-dropdown-link>
+                      </li>
+                    </x-slot>
+                  </x-dropdown-levels>
+                </li>
+                <li>
+                  <x-dropdown-levels level="second" class="px-2">
+                    <x-slot name="title">
+                      {{ __('Contractors') }}
+                    </x-slot>
+                    <x-slot name="content">
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 1') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 2') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 3') }}
+                        </x-dropdown-link>
+                      </li>
+                    </x-slot>
+                  </x-dropdown-levels>
+                </li>
+                <li>
+                  <x-dropdown-levels level="second" class="px-2">
+                    <x-slot name="title">
+                      {{ __('Providers') }}
+                    </x-slot>
+                    <x-slot name="content">
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 1') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 2') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 3') }}
+                        </x-dropdown-link>
+                      </li>
+                    </x-slot>
+                  </x-dropdown-levels>
+                </li>
+                <li>
+                  <x-dropdown-levels level="second" class="px-2">
+                    <x-slot name="title">
+                      {{ __('Programs') }}
+                    </x-slot>
+                    <x-slot name="content">
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 1') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 2') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 3') }}
+                        </x-dropdown-link>
+                      </li>
+                    </x-slot>
+                  </x-dropdown-levels>
+                </li>
               </x-slot>
-            </x-dropdown>
+            </x-dropdown-levels>
           </div>
 
           <!-- link list Operative -->
-          <div class="relative mt-4">
-            <x-dropdown align="left">
-              <x-slot name="trigger">
-                <span class="inline-flex rounded-md">
-                  <button type="button" class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 dark:text-gray-400 bg-white dark:bg-gray-800 hover:text-gray-700 dark:hover:text-gray-300 focus:outline-none focus:bg-gray-50 dark:focus:bg-gray-700 active:bg-gray-50 dark:active:bg-gray-700 transition ease-in-out duration-150">
-                    {{ __('Operative') }}
-
-                    <svg class="ml-2 -mr-0.5 h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 15L12 18.75 15.75 15m-7.5-6L12 5.25 15.75 9" />
-                    </svg>
-                  </button>
-                </span>
+          <div class="relative py-4">
+            <x-dropdown-levels level="first">
+              <x-slot name="title">
+                {{ __('Operative') }}
               </x-slot>
               <x-slot name="content">
-                <x-dropdown-link href="#">
-                  {{ __('Request for Services') }}
-                </x-dropdown-link>
-                <x-dropdown-link href="#">
-                  {{ __('Services Programming') }}
-                </x-dropdown-link>
-                <x-dropdown-link href="#">
-                  {{ __('Service Tracking') }}
-                </x-dropdown-link>
-                <x-dropdown-link href="#">
-                  {{ __('Service Settlement') }}
-                </x-dropdown-link>
-                <x-dropdown-link href="#">
-                  {{ __('Service Rating') }}
-                </x-dropdown-link>
+                <li>
+                  <x-dropdown-levels level="second" class="px-2">
+                    <x-slot name="title">
+                      {{ __('Request for Services') }}
+                    </x-slot>
+                    <x-slot name="content">
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 1') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 2') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 3') }}
+                        </x-dropdown-link>
+                      </li>
+                    </x-slot>
+                  </x-dropdown-levels>
+                </li>
+                <li>
+                  <x-dropdown-levels level="second" class="px-2">
+                    <x-slot name="title">
+                      {{ __('Services Programming') }}
+                    </x-slot>
+                    <x-slot name="content">
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 1') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 2') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 3') }}
+                        </x-dropdown-link>
+                      </li>
+                    </x-slot>
+                  </x-dropdown-levels>
+                </li>
+                <li>
+                  <x-dropdown-levels level="second" class="px-2">
+                    <x-slot name="title">
+                      {{ __('Service Tracking') }}
+                    </x-slot>
+                    <x-slot name="content">
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 1') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 2') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 3') }}
+                        </x-dropdown-link>
+                      </li>
+                    </x-slot>
+                  </x-dropdown-levels>
+                </li>
+                <li>
+                  <x-dropdown-levels level="second" class="px-2">
+                    <x-slot name="title">
+                      {{ __('Service Settlement') }}
+                    </x-slot>
+                    <x-slot name="content">
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 1') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 2') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 3') }}
+                        </x-dropdown-link>
+                      </li>
+                    </x-slot>
+                  </x-dropdown-levels>
+                </li>
+                <li>
+                  <x-dropdown-levels level="second" class="px-2">
+                    <x-slot name="title">
+                      {{ __('Service Rating') }}
+                    </x-slot>
+                    <x-slot name="content">
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 1') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 2') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 3') }}
+                        </x-dropdown-link>
+                      </li>
+                    </x-slot>
+                  </x-dropdown-levels>
+                </li>
               </x-slot>
-            </x-dropdown>
+            </x-dropdown-levels>
           </div>
 
           <!-- link list Financial -->
-          <div class="relative mt-4">
-            <x-dropdown align="left">
-              <x-slot name="trigger">
-                <span class="inline-flex rounded-md">
-                  <button type="button" class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 dark:text-gray-400 bg-white dark:bg-gray-800 hover:text-gray-700 dark:hover:text-gray-300 focus:outline-none focus:bg-gray-50 dark:focus:bg-gray-700 active:bg-gray-50 dark:active:bg-gray-700 transition ease-in-out duration-150">
-                    {{ __('Financial') }}
-
-                    <svg class="ml-2 -mr-0.5 h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 15L12 18.75 15.75 15m-7.5-6L12 5.25 15.75 9" />
-                    </svg>
-                  </button>
-                </span>
+          <div class="relative py-4">
+            <x-dropdown-levels level="first">
+              <x-slot name="title">
+                {{ __('Financial') }}
               </x-slot>
               <x-slot name="content">
-                <x-dropdown-link href="#">
-                  {{ __('Accounts Receivable') }}
-                </x-dropdown-link>
-                <x-dropdown-link href="#">
-                  {{ __('Accounts Payable') }}
-                </x-dropdown-link>
-                <x-dropdown-link href="#">
-                  {{ __('Revenue Movement') }}
-                </x-dropdown-link>
-                <x-dropdown-link href="#">
-                  {{ __('Outgoing Movement') }}
-                </x-dropdown-link>
-                <x-dropdown-link href="#">
-                  {{ __('Budget Analysis') }}
-                </x-dropdown-link>
+                <li>
+                  <x-dropdown-levels level="second" class="px-2">
+                    <x-slot name="title">
+                      {{ __('Accounts Receivable') }}
+                    </x-slot>
+                    <x-slot name="content">
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 1') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 2') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 3') }}
+                        </x-dropdown-link>
+                      </li>
+                    </x-slot>
+                  </x-dropdown-levels>
+                </li>
+                <li>
+                  <x-dropdown-levels level="second" class="px-2">
+                    <x-slot name="title">
+                      {{ __('Accounts Payable') }}
+                    </x-slot>
+                    <x-slot name="content">
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 1') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 2') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 3') }}
+                        </x-dropdown-link>
+                      </li>
+                    </x-slot>
+                  </x-dropdown-levels>
+                </li>
+                <li>
+                  <x-dropdown-levels level="second" class="px-2">
+                    <x-slot name="title">
+                      {{ __('Revenue Movement') }}
+                    </x-slot>
+                    <x-slot name="content">
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 1') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 2') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 3') }}
+                        </x-dropdown-link>
+                      </li>
+                    </x-slot>
+                  </x-dropdown-levels>
+                </li>
+                <li>
+                  <x-dropdown-levels level="second" class="px-2">
+                    <x-slot name="title">
+                      {{ __('Outgoing Movement') }}
+                    </x-slot>
+                    <x-slot name="content">
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 1') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 2') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 3') }}
+                        </x-dropdown-link>
+                      </li>
+                    </x-slot>
+                  </x-dropdown-levels>
+                </li>
+                <li>
+                  <x-dropdown-levels level="second" class="px-2">
+                    <x-slot name="title">
+                      {{ __('Budget Analysis') }}
+                    </x-slot>
+                    <x-slot name="content">
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 1') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 2') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Item 3') }}
+                        </x-dropdown-link>
+                      </li>
+                    </x-slot>
+                  </x-dropdown-levels>
+                </li>
               </x-slot>
-            </x-dropdown>
+            </x-dropdown-levels>
           </div>
+
         </div>
       </div>
 
