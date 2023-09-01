@@ -189,6 +189,16 @@
                           {{ __('Tourism Passengers') }}
                         </x-dropdown-link>
                       </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Urban Transportation') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Intermunicipal Transfers') }}
+                        </x-dropdown-link>
+                      </li>
                     </x-slot>
                   </x-dropdown-levels>
                 </li>
@@ -198,19 +208,34 @@
                       {{ __('Service Types') }}
                     </x-slot>
                     <x-slot name="content">
-                      <li>
+                    <li>
                         <x-dropdown-link href="#">
-                          {{ __('Item 1') }}
+                          {{ __('Express Courier') }}
                         </x-dropdown-link>
                       </li>
                       <li>
                         <x-dropdown-link href="#">
-                          {{ __('Item 2') }}
+                          {{ __('Express Logistics') }}
                         </x-dropdown-link>
                       </li>
                       <li>
                         <x-dropdown-link href="#">
-                          {{ __('Item 3') }}
+                          {{ __('Express Freight') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Tourism Passengers') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Urban Transportation') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Intermunicipal Transfers') }}
                         </x-dropdown-link>
                       </li>
                     </x-slot>
@@ -235,17 +260,32 @@
                     <x-slot name="content">
                       <li>
                         <x-dropdown-link href="#">
-                          {{ __('Item 1') }}
+                          {{ __('Document Creation') }}
                         </x-dropdown-link>
                       </li>
                       <li>
                         <x-dropdown-link href="#">
-                          {{ __('Item 2') }}
+                          {{ __('Variable Creation') }}
                         </x-dropdown-link>
                       </li>
                       <li>
                         <x-dropdown-link href="#">
-                          {{ __('Item 3') }}
+                          {{ __('Configuration Document') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Preventive Actions') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Corrective Actions') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Opportunities for Improvement') }}
                         </x-dropdown-link>
                       </li>
                     </x-slot>
@@ -259,17 +299,32 @@
                     <x-slot name="content">
                       <li>
                         <x-dropdown-link href="#">
-                          {{ __('Item 1') }}
+                          {{ __('Document Creation') }}
                         </x-dropdown-link>
                       </li>
                       <li>
                         <x-dropdown-link href="#">
-                          {{ __('Item 2') }}
+                          {{ __('Variable Creation') }}
                         </x-dropdown-link>
                       </li>
                       <li>
                         <x-dropdown-link href="#">
-                          {{ __('Item 3') }}
+                          {{ __('Configuration Document') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Preventive Actions') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Corrective Actions') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Opportunities for Improvement') }}
                         </x-dropdown-link>
                       </li>
                     </x-slot>
@@ -283,17 +338,32 @@
                     <x-slot name="content">
                       <li>
                         <x-dropdown-link href="#">
-                          {{ __('Item 1') }}
+                          {{ __('Document Creation') }}
                         </x-dropdown-link>
                       </li>
                       <li>
                         <x-dropdown-link href="#">
-                          {{ __('Item 2') }}
+                          {{ __('Variable Creation') }}
                         </x-dropdown-link>
                       </li>
                       <li>
                         <x-dropdown-link href="#">
-                          {{ __('Item 3') }}
+                          {{ __('Configuration Document') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Preventive Actions') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Corrective Actions') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Opportunities for Improvement') }}
                         </x-dropdown-link>
                       </li>
                     </x-slot>
@@ -307,17 +377,32 @@
                     <x-slot name="content">
                       <li>
                         <x-dropdown-link href="#">
-                          {{ __('Item 1') }}
+                          {{ __('Document Creation') }}
                         </x-dropdown-link>
                       </li>
                       <li>
                         <x-dropdown-link href="#">
-                          {{ __('Item 2') }}
+                          {{ __('Variable Creation') }}
                         </x-dropdown-link>
                       </li>
                       <li>
                         <x-dropdown-link href="#">
-                          {{ __('Item 3') }}
+                          {{ __('Configuration Document') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Preventive Actions') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Corrective Actions') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Opportunities for Improvement') }}
                         </x-dropdown-link>
                       </li>
                     </x-slot>
@@ -331,17 +416,32 @@
                     <x-slot name="content">
                       <li>
                         <x-dropdown-link href="#">
-                          {{ __('Item 1') }}
+                          {{ __('Document Creation') }}
                         </x-dropdown-link>
                       </li>
                       <li>
                         <x-dropdown-link href="#">
-                          {{ __('Item 2') }}
+                          {{ __('Variable Creation') }}
                         </x-dropdown-link>
                       </li>
                       <li>
                         <x-dropdown-link href="#">
-                          {{ __('Item 3') }}
+                          {{ __('Configuration Document') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Preventive Actions') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Corrective Actions') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Opportunities for Improvement') }}
                         </x-dropdown-link>
                       </li>
                     </x-slot>
@@ -366,17 +466,17 @@
                     <x-slot name="content">
                       <li>
                         <x-dropdown-link href="#">
-                          {{ __('Item 1') }}
+                          {{ __('Legal Information') }}
                         </x-dropdown-link>
                       </li>
                       <li>
                         <x-dropdown-link href="#">
-                          {{ __('Item 2') }}
+                          {{ __('Financial Information') }}
                         </x-dropdown-link>
                       </li>
                       <li>
                         <x-dropdown-link href="#">
-                          {{ __('Item 3') }}
+                          {{ __('Technical Information') }}
                         </x-dropdown-link>
                       </li>
                     </x-slot>
@@ -390,17 +490,22 @@
                     <x-slot name="content">
                       <li>
                         <x-dropdown-link href="#">
-                          {{ __('Item 1') }}
+                          {{ __('Partners') }}
                         </x-dropdown-link>
                       </li>
                       <li>
                         <x-dropdown-link href="#">
-                          {{ __('Item 2') }}
+                          {{ __('Messaging Contractors') }}
                         </x-dropdown-link>
                       </li>
                       <li>
                         <x-dropdown-link href="#">
-                          {{ __('Item 3') }}
+                          {{ __('Express Freight Contractors') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Special Service Contractors') }}
                         </x-dropdown-link>
                       </li>
                     </x-slot>
@@ -414,17 +519,17 @@
                     <x-slot name="content">
                       <li>
                         <x-dropdown-link href="#">
-                          {{ __('Item 1') }}
+                          {{ __('Products') }}
                         </x-dropdown-link>
                       </li>
                       <li>
                         <x-dropdown-link href="#">
-                          {{ __('Item 2') }}
+                          {{ __('Services') }}
                         </x-dropdown-link>
                       </li>
                       <li>
                         <x-dropdown-link href="#">
-                          {{ __('Item 3') }}
+                          {{ __('Providers') }}
                         </x-dropdown-link>
                       </li>
                     </x-slot>
@@ -438,17 +543,17 @@
                     <x-slot name="content">
                       <li>
                         <x-dropdown-link href="#">
-                          {{ __('Item 1') }}
+                          {{ __('Messaging') }}
                         </x-dropdown-link>
                       </li>
                       <li>
                         <x-dropdown-link href="#">
-                          {{ __('Item 2') }}
+                          {{ __('Express Freight') }}
                         </x-dropdown-link>
                       </li>
                       <li>
                         <x-dropdown-link href="#">
-                          {{ __('Item 3') }}
+                          {{ __('Special Services') }}
                         </x-dropdown-link>
                       </li>
                     </x-slot>
