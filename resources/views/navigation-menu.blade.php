@@ -567,17 +567,17 @@
                     <x-slot name="content">
                       <li>
                         <x-dropdown-link href="#">
-                          {{ __('Item 1') }}
+                          {{ __('Messaging') }}
                         </x-dropdown-link>
                       </li>
                       <li>
                         <x-dropdown-link href="#">
-                          {{ __('Item 2') }}
+                          {{ __('Express Freight') }}
                         </x-dropdown-link>
                       </li>
                       <li>
                         <x-dropdown-link href="#">
-                          {{ __('Item 3') }}
+                          {{ __('Special Services') }}
                         </x-dropdown-link>
                       </li>
                     </x-slot>
@@ -591,17 +591,22 @@
                     <x-slot name="content">
                       <li>
                         <x-dropdown-link href="#">
-                          {{ __('Item 1') }}
+                          {{ __('Training Plan') }}
                         </x-dropdown-link>
                       </li>
                       <li>
                         <x-dropdown-link href="#">
-                          {{ __('Item 2') }}
+                          {{ __('Compliance Support') }}
                         </x-dropdown-link>
                       </li>
                       <li>
                         <x-dropdown-link href="#">
-                          {{ __('Item 3') }}
+                          {{ __('Training Efficiency') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Corresponding Indicators') }}
                         </x-dropdown-link>
                       </li>
                     </x-slot>
@@ -615,17 +620,22 @@
                     <x-slot name="content">
                       <li>
                         <x-dropdown-link href="#">
-                          {{ __('Item 1') }}
+                          {{ __('Master List') }}
                         </x-dropdown-link>
                       </li>
                       <li>
                         <x-dropdown-link href="#">
-                          {{ __('Item 2') }}
+                          {{ __('Documentary Procedures') }}
                         </x-dropdown-link>
                       </li>
                       <li>
                         <x-dropdown-link href="#">
-                          {{ __('Item 3') }}
+                          {{ __('Documentary Records') }}
+                        </x-dropdown-link>
+                      </li>
+                      <li>
+                        <x-dropdown-link href="#">
+                          {{ __('Consultation Documents') }}
                         </x-dropdown-link>
                       </li>
                     </x-slot>
@@ -650,17 +660,17 @@
                     <x-slot name="content">
                       <li>
                         <x-dropdown-link href="#">
-                          {{ __('Item 1') }}
+                          {{ __('Committee Minutes') }}
                         </x-dropdown-link>
                       </li>
                       <li>
                         <x-dropdown-link href="#">
-                          {{ __('Item 2') }}
+                          {{ __('Process Minutes') }}
                         </x-dropdown-link>
                       </li>
                       <li>
                         <x-dropdown-link href="#">
-                          {{ __('Item 3') }}
+                          {{ __('Archive of Minutes') }}
                         </x-dropdown-link>
                       </li>
                     </x-slot>
@@ -674,17 +684,17 @@
                     <x-slot name="content">
                       <li>
                         <x-dropdown-link href="#">
-                          {{ __('Item 1') }}
+                          {{ __('Implementation of Procedures') }}
                         </x-dropdown-link>
                       </li>
                       <li>
                         <x-dropdown-link href="#">
-                          {{ __('Item 2') }}
+                          {{ __('Procedures in Process') }}
                         </x-dropdown-link>
                       </li>
                       <li>
                         <x-dropdown-link href="#">
-                          {{ __('Item 3') }}
+                          {{ __('Procedures Archive') }}
                         </x-dropdown-link>
                       </li>
                     </x-slot>
